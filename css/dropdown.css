@@ -1,0 +1,324 @@
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white
+}
+
+
+@media screen and (min-width: 1000px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1480px) {
+  :root {
+    font-size: 17px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+  .main {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #EEEEEE;
+    line-height: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 100vh;
+    background: linear-gradient(120deg, #9b67b3 50%, rgba(54, 42, 51, 0.137) 50%);
+    margin: 0;
+    padding: 0;
+  }
+  .main .header,
+  .main legend.header {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.0rem;
+    margin: 0.5em 0;
+  }
+  .main .header1,
+  .main legend.header {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.0rem;
+    margin: 0.5em 0;
+    width: 270px;
+  }
+  .main .bio,
+  .main .profile_form {
+    max-width: 320px;
+    margin-top: 20vh;
+  }
+  .main .bio {
+    
+    text-align: center;
+    max-width: 32%;
+  }
+  .main .bio .profile-img {
+    width: 90px; height: 90px;
+    border-radius: 50%;
+  }
+  .main .bio .bio-link {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.25rem;
+    display: inline-block;
+    clear: left;
+    text-decoration: none;
+    color: #EEEEEE;
+    margin-bottom: 0.25em;
+    transition: color 300ms ease-in-out;
+  }
+  .main .bio button {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    display: block;
+    background: rgb(141, 76, 184);
+    color: #EEEEEE;
+    width: auto;
+    padding: 0.75em 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .bio .bio-link i {
+    margin-left: 8px;
+  }
+  .main .bio .bio-link::after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 0;
+    background: #CA8D6E;
+    transition: width 300ms ease-in-out;
+  }
+  .main .bio .bio-link:hover::after {
+    width: 100%;
+  }
+  .main .bio .bio-link:hover {
+    color: #CA8D6E;
+  }
+  .main .profile_form {
+    margin-top: 0;
+    color: #CA8D6E;
+  }
+  .main .profile_form form fieldset {
+    font-size: 1rem;
+    position: relative;
+    border: none;
+    margin-bottom: 0.25em;
+    padding: 0.25em 0;
+    width :100%
+  }
+  .main .profile_form form fieldset label {
+    font-size: 0.875rem;
+    display: block;
+    position: absolute;
+    right: 0.125em;
+    top: 1.5em;
+    color: #CA8D6E;
+  }
+  .main .profile_form form input,
+  .main .profile_form form textarea,
+  .main .profile_form form button {
+    border: 0;
+  }
+  .main .profile_form form input:focus,
+  .main .profile_form form textarea:focus,
+  .main .profile_form form button:focus {
+    outline: none;
+  }
+  .main .profile_form form input,
+  .main .profile_form form textarea {
+    display: block;
+    font-family: 'Karla';
+    font-size: 1rem;
+    padding: 0.5em 0;
+    width: 280px;
+    height: 50%;
+    background: none;
+    color: #CA8D6E;
+    border-bottom: 1px solid #7D6962;
+    transition: border 300ms ease-in-out;
+  }
+  
+  .main .profile_form form input:focus,
+  .main .profile_form form textarea:focus {
+    border-bottom: 1px solid #CA8D6E;
+  }
+  .main .profile_form form input::-webkit-input-placeholder,
+  .main .profile_form form textarea::-webkit-input-placeholder {
+    color: #7D6962;
+  }
+  .main .profile_form form input:-ms-input-placeholder,
+  .main .profile_form form textarea:-ms-input-placeholder {
+    color: #7D6962;
+  }
+  .main .profile_form form input::-ms-input-placeholder,
+  .main .profile_form form textarea::-ms-input-placeholder {
+    color: #7D6962;
+  }
+  .main .profile_form form input::placeholder,
+  .main .profile_form form textarea::placeholder {
+    color: #7D6962;
+  }
+  .main .profile_form button:hover {
+    -webkit-animation: swell 500ms ease-in-out;
+            animation: swell 500ms ease-in-out;
+    cursor: pointer;
+  }
+  .main .profile_form textarea {
+    resize: none;
+  }
+  
+  .main {
+    overflow: hidden;
+    -webkit-animation: Page 600ms ease-in-out forwards;
+            animation: Page 600ms ease-in-out forwards;
+  }
+  
+  .bio {
+    -webkit-animation: Bio 600ms ease-in-out forwards;
+            animation: Bio 600ms ease-in-out forwards;
+  }
+  
+  .profile_form {
+    -webkit-animation: profile_form 600ms ease-in-out forwards;
+            animation: profile_form 600ms ease-in-out forwards;
+  }
+  
+  @-webkit-keyframes Page {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes Page {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes Bio {
+    0% {
+      -webkit-transform: translateX(-50vw);
+              transform: translateX(-50vw);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes Bio {
+    0% {
+      -webkit-transform: translateX(-50vw);
+              transform: translateX(-50vw);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes profile_form {
+    0% {
+      -webkit-transform: translateX(50vw);
+              transform: translateX(50vw);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes profile_form {
+    0% {
+      -webkit-transform: translateX(50vw);
+              transform: translateX(50vw);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes swell {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes swell {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
